@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #6d6b6b;
+}
+
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #6d6b6b;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 12px 12px #b8b7b7;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card:hover{
+    cursor: pointer;
+    border: 3px solid #7c7a7a;
+}
+
+.card img {
+    width: 150px; /* Ajusto el tamaño de la imagen (era muy grande) */
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    height: 174px; /* Ajusto el alto al h2 mas grande (card 14), para que todas las cards sean iguales */
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #2b2727;
+}
+
+.card h4 {
+    font-size: 20px;
+    color: #555;
+}
+
+.card p {
+    font-size: 15px;
+    color: #888;
+}
