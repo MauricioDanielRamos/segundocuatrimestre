@@ -14,6 +14,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
+    padding-bottom: 20px;
 }
 
 .card {
@@ -28,7 +29,7 @@ h1{
 
 .card:hover{
     cursor: pointer;
-    border: 3px solid #7c7a7a;
+    outline: 3px solid #7c7a7a;
 }
 
 .card img {
