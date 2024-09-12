@@ -5,7 +5,7 @@ fetch("https://fakestoreapi.com/products")
 .then(data => {
     data.forEach(products => {
         contenedor.innerHTML += `<div class="card">
-                                    <h2>Nombre ${products.title}</h2>
+                                    <h2>${products.title}</h2>
                                     <p>${products.category}</p>
                                     <img src="${products.image}" alt="image of ${products.title}">
                                     <h4>Precio: $ ${products.price.toFixed(2)}</h4> 
