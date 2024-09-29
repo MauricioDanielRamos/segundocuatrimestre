@@ -1,10 +1,13 @@
 export class Camion{
+	//propiedades
     private marcaCamion:string;
     private modeloCamion:number;
     private patenteCamion:number;
     private motorCamion: string;
     private habilitadoCircular:boolean;
+	//fin propiedades
 
+	//constructor
 	constructor(marcaCamiones:string,modeloCamiones:number,patenteCamiones:number,motorCamiones:string,habilitadoCircular?:boolean) {
         this.marcaCamion = marcaCamiones;
         this.modeloCamion = modeloCamiones;
@@ -15,9 +18,10 @@ export class Camion{
         }else{
             this.habilitadoCircular = true;
         };
-        
 	}
+	//fin constructor
 
+	//metodos
 	public getmarcaCamion(): string {
 		return this.marcaCamion;
 	}
@@ -61,4 +65,5 @@ export class Camion{
 	public toString(): string {
         return `Camion: ${this.marcaCamion} - Modelo: ${this.modeloCamion} - Patente: ${this.patenteCamion} - Motor: ${this.motorCamion} - Habilitado: ${this.habilitadoCircular}`;
     }
+	//fin metodos
 }

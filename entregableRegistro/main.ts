@@ -1,11 +1,13 @@
 import { RegistroAutomotor } from "./classRegistro";
-/* import { Auto } from "./classAuto";
-import { Camion } from "./classCamion";
+/* import { Auto } from "./classAuto";  //Estan comentados, porque deduzco que vienen incluidos
+import { Camion } from "./classCamion"; //desde la class RegistroAutomotor
 import { Moto } from "./classMoto"; */
 
+    //instanciacion de registros
     const registro1: RegistroAutomotor = new RegistroAutomotor(); 
     const registro2: RegistroAutomotor = new RegistroAutomotor(); 
 
+    //asignacion de vehiculos a los registros
     registro1.asignarAuto("Audi",2020,1234,"Audi", true);
     registro1.asignarAuto("Chevrolet",2016,3456,"Corsa",true);
     registro1.asignarAuto("Ford",2001,5496,"Ford",true);
@@ -27,8 +29,7 @@ import { Moto } from "./classMoto"; */
     registro2.asignarCamion("Mercedes Benz",1990,2569,"Mercedes Benz",true);
     registro2.asignarCamion("Mack",2000,3497,"Mack",true);
 
-    
-    
+    //algunos metodos utilizados
 const motoEncontrada = registro1.buscarMotoPorPatente(8914);
 if (motoEncontrada) {
     console.log(`Moto encontrada: ${motoEncontrada}`);

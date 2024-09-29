@@ -1,13 +1,13 @@
-
-
 export class Auto{
+	//propiedades
     private marcaAuto:string;
     private modeloAuto:number;
     private patenteAuto:number;
     private motorAuto: string;
     private habilitadoCircular:boolean;
+	//fin propiedades
     
-
+	//constructor
 	constructor(marcaAuto:string,modeloAuto:number,patenteAuto:number,motorAuto:string,habilitadoCircular?:boolean) {
         this.marcaAuto = marcaAuto;
         this.modeloAuto = modeloAuto;
@@ -18,9 +18,10 @@ export class Auto{
         }else{
             this.habilitadoCircular = true;
         };
-        
 	}
+	//fin constructor
 
+	//metodos
 	public getmarcaAuto(): string {
 		return this.marcaAuto;
 	}
@@ -64,4 +65,5 @@ export class Auto{
 	public toString(): string {
         return `Auto: ${this.marcaAuto} - Modelo: ${this.modeloAuto} - Patente: ${this.patenteAuto} - Motor: ${this.motorAuto} - Habilitado: ${this.habilitadoCircular}`;
     }
+	//fin metodos
 }
